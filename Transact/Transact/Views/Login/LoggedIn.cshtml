@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "LoggedIn";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+@if (Session["UserID"] != null)
+{
+
+
+    <div class="container-fluid" style="height:605px">
+
+        <div class="row" style="">
+
+            @Html.Partial("_LoggedInLeftPanel")
+
+            <div class="col-sm-9 col-md-10 col-lg-10" style="background-color:#9ea7a6;color:black;height:605px">
+                <h4>Your Current Balance:</h4>
+
+
+
+                <div class="alert alert-success" role="alert">
+                    @Session["AccBalance"];
+                </div>
+
+
+                <h4>Your Account Number:</h4>
+
+
+
+                <div class="alert alert-success" role="alert">
+                    @Session["AccNum"];
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+}

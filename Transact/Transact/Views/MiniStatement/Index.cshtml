@@ -1,0 +1,155 @@
+﻿
+
+@{
+    ViewBag.Title = "LoggedIn";
+}
+@using System.Data
+@model DataSet
+@*@{
+    Layout = null;
+}*@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+
+
+@if (Session["UserID"] != null)
+{
+
+
+    <div class="container-fluid" style="height:605px">
+
+        <div class="row" style="">
+
+            @Html.Partial("_LoggedInLeftPanel")
+
+            <div class="col-sm-9 col-md-10 col-lg-10" style="background-color:#9ea7a6;color:black;height:605px">
+
+
+                <div class="w3-container">
+
+                    <button style="margin-top:20px" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Show my Account Statement</button>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                            <header class="w3-container w3-teal">
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                      class="w3-button w3-display-topright">&times;</span>
+                                <h2>Mini Statement</h2>
+                            </header>
+                            <table cellpadding="0" cellspacing="0">
+                                <table class="w3-table-all w3-small">
+                                    <tr class="w3-red">
+                                        <th>TRANSACTION_ID</th>
+                                        <th>FROM_ACCOUNT</th>
+                                        <th>TO_ACCOUNT</th>
+                                        <th>TRANSACTION_TYPE</th>
+                                        <th>TRANSACTION_DATE</th>
+                                        <th>AMOUNT</th>
+                                        <th>ACCOUNT</th>
+                                    </tr>
+                                    @foreach (DataRow row in Model.Tables[0].Rows)
+                                    {
+                                        <tr>
+                                            <td>@row["TRANSACTION_ID"]</td>
+                                            <td>@row["FROM_ACCOUNT"]</td>
+                                            <td>@row["TO_ACCOUNT"]</td>
+                                            <td>@row["TRANSACTION_TYPE"]</td>
+                                            <td>@row["TRANSACTION_DATE"]</td>
+                                            <td>@row["AMOUNT"]</td>
+                                            <td>@row["ACCOUNT"]</td>
+                                        </tr>
+                                    }
+                                </table>
+                                <footer class="w3-container w3-teal">
+                                    <p></p>
+                                </footer>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+}
+
+
+<!-------------------------------------------------->
+<!-------------------------------------------------->
+<!-------------------------------------------------->
+@*@using System.Data
+    @model DataSet
+    @{
+        Layout = null;
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            th, td {
+                padding: 15px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <table cellpadding="0" cellspacing="0">
+            <table class="w3-table-all w3-small">
+                <tr class="w3-red">
+                    <th>TRANSACTION_ID</th>
+                    <th>FROM_ACCOUNT</th>
+                    <th>TO_ACCOUNT</th>
+                    <th>TRANSACTION_TYPE</th>
+                    <th>TRANSACTION_DATE</th>
+                    <th>AMOUNT</th>
+                    <th>ACCOUNT</th>
+                </tr>
+                @foreach (DataRow row in Model.Tables[0].Rows)
+                {
+                    <tr>
+                        <td>@row["TRANSACTION_ID"]</td>
+                        <td>@row["FROM_ACCOUNT"]</td>
+                        <td>@row["TO_ACCOUNT"]</td>
+                        <td>@row["TRANSACTION_TYPE"]</td>
+                        <td>@row["TRANSACTION_DATE"]</td>
+                        <td>@row["AMOUNT"]</td>
+                        <td>@row["ACCOUNT"]</td>
+                    </tr>
+                }
+            </table>
+
+
+    </body>
+    </html>*@
