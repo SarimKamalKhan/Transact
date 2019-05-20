@@ -1,0 +1,88 @@
+﻿@model Transact.Models.Fund_Transfer
+
+@{
+                /**/
+
+                ViewBag.Title = "Deposit";
+}
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" type="text/css" href="~/Content/mystyle.css">
+
+@if (Session["UserID"] != null)
+{
+
+
+    <div class="container-fluid" style="height:605px">
+
+        <div class="row" style="">
+
+            @Html.Partial("_LoggedInLeftPanel")
+
+            <div class="col-sm-9 col-md-10 col-lg-10" style="background-color:#9ea7a6;color:black;height:605px">
+
+
+                <div class="w3-container">
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <h3><strong>Deposit Cash to My Account</strong></h3>
+
+                        <hr />
+                        <div class="alert alert-success col-md-5" role="alert">
+                            <blink>Provide Amount to Deposit in your Account</blink>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                @ViewBag.text
+                            </div>
+
+
+                        </div>
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+                        <div class="form-group">
+                            <b>@Html.LabelFor(model => model.AMOUNT, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.AMOUNT, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.AMOUNT, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+
+                                <input type="submit" value="Deposit" class="btn btn-secondary" />
+
+
+                            </div>
+                        </div>
+                    </div>
+                    }
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+}

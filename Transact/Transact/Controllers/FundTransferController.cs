@@ -118,9 +118,9 @@ namespace Transact.Controllers
                                     Debit_Query.ExecuteNonQuery();
                                     Credit_Query.ExecuteNonQuery();
                                     balance_Query.ExecuteNonQuery();
-                                    
 
-                                    
+
+
 
                                     ViewBag.Check_balance = "Fund Transfer is Successful";
                                 }
