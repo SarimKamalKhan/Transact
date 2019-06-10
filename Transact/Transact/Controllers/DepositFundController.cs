@@ -22,7 +22,7 @@ namespace Transact.Controllers
             {
                 return RedirectToAction("Login", "Login");
             }
-            
+
         }
 
 
@@ -43,7 +43,7 @@ namespace Transact.Controllers
                         using (OurDBContext db = new OurDBContext())
                         {
 
-                            string connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost )(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=XE)));User Id=sarim;Password=ourapplication;";
+                            string connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost )(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=XE)));User Id=transact;Password=transactpswd;";
                             OracleConnection connection = new OracleConnection(connectionString);
 
 

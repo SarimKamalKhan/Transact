@@ -14,64 +14,47 @@ namespace Transact.Controllers
         Fund_Transfer db = new Fund_Transfer();
 
         // GET: MiniStatement
-        public ActionResult Index()
+        public ActionResult Index( )
         {
+
+            DataSet ds = new DataSet();
+            string connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost )(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=XE)));User Id=transact;Password=transactpswd;";
+            OracleConnection connection = new OracleConnection(connectionString);
+
+            //To check if the user is already exist
+            string check_queryString =
+"select * from fund_transfer where account = '" + Int32.Parse(Session["AccNum"].ToString()) + "' order by TRANSACTION_ID desc";
+            OracleCommand MiniStat_command = connection.CreateCommand();
+            MiniStat_command.CommandText = check_queryString;
 
             try
             {
-                if (Session["UserID"] != null)
-                {
-
-                    DataSet ds = new DataSet();
-                    string connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost )(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=XE)));User Id=sarim;Password=ourapplication;";
-                    OracleConnection connection = new OracleConnection(connectionString);
-
-                    //To check if the user is already exist
-                    string check_queryString =
-        "select * from fund_transfer where account = '" + Int32.Parse(Session["AccNum"].ToString()) + "' order by TRANSACTION_ID desc";
-                    OracleCommand MiniStat_command = connection.CreateCommand();
-                    MiniStat_command.CommandText = check_queryString;
-
-                    try
+                connection.Open();
+                //OracleDataReader dr = MiniStat_command.ExecuteReader();
+                          
+                    
+                  
+                    using (OracleDataAdapter sda = new OracleDataAdapter(MiniStat_command))
                     {
-                        connection.Open();
-                        //OracleDataReader dr = MiniStat_command.ExecuteReader();
-
-
-
-                        using (OracleDataAdapter sda = new OracleDataAdapter(MiniStat_command))
-                        {
-                            sda.Fill(ds);
-                        }
-
-                        connection.Close();
-                        connection.Dispose();
-
-
+                        sda.Fill(ds);
                     }
 
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                        ViewBag.Message = ex.Message;
-                    }
-
-
-
-
-                    return View(ds);
-                }
-                else
-                {
-                    return RedirectToAction("Login", "Login");
-                }
-
+                    connection.Close();
+                    connection.Dispose();
+                   
+               
             }
-            catch (Exception e)
+
+            catch (Exception ex)
             {
-
-                return Content(e.ToString());
+                Console.WriteLine(ex.Message);
+                ViewBag.Message = ex.Message;
             }
+
+
+
+
+            return View(ds);
         }
     }
 }

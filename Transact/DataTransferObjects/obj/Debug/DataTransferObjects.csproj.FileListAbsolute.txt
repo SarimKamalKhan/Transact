@@ -1,0 +1,6 @@
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataTransferObjects\bin\Debug\DataTransferObjects.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataTransferObjects\bin\Debug\DataTransferObjects.pdb
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataTransferObjects\obj\Debug\DataTransferObjects.csprojAssemblyReference.cache
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataTransferObjects\obj\Debug\DataTransferObjects.csproj.CoreCompileInputs.cache
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataTransferObjects\obj\Debug\DataTransferObjects.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataTransferObjects\obj\Debug\DataTransferObjects.pdb

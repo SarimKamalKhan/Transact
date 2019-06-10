@@ -1,0 +1,9 @@
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\bin\Debug\CommonHelper.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\bin\Debug\CommonHelper.pdb
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\bin\Debug\DataTransferObjects.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\bin\Debug\DataTransferObjects.pdb
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\obj\Debug\CommonHelper.csprojAssemblyReference.cache
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\obj\Debug\CommonHelper.csproj.CoreCompileInputs.cache
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\obj\Debug\CommonHelper.csproj.CopyComplete
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\obj\Debug\CommonHelper.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\CommonHelper\obj\Debug\CommonHelper.pdb

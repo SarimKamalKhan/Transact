@@ -11,7 +11,6 @@ namespace Transact.Models
     {
        public DbSet<Registration> registration { get; set; }
 
-
         public System.Data.Entity.DbSet<Transact.Models.Fund_Transfer> Fund_Transfer { get; set; }
     }
 }

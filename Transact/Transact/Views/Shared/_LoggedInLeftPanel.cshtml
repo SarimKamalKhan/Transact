@@ -1,29 +1,26 @@
-﻿
-@*<link rel="stylesheet" type="text/css" href="~/Content/mystyle.css">*@
+﻿@*<link rel="stylesheet" type="text/css" href="~/Content/mystyle.css">*@
 
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 210px;
-            background-color: #3a5050;
-        }
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 210px;
+        background-color: #3a5050;
+    }
 
-        li a {
-            display: block;
+    li a {
+        display: block;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: black;
             color: white;
-            padding: 8px 16px;
-            text-decoration: none;
         }
-
-           
-
-            li a:hover {
-                background-color: black;
-                color: white;
-            }
-    </style>
+</style>
 
 <div class="col-sm-3 col-md-2 col-lg-2" style="background-color:#3a5050;color:white;height:605px">
 
@@ -42,10 +39,10 @@
         </ul>*@
 
     <ul>
-        <li><a  href="~/Login/LoggedIn">Home</a></li>
+        <li><a href="~/Login/LoggedIn">Home</a></li>
         <li><a href="~/FundTransfer/Fund_Transfer">Fund Transfer</a></li>
         <li><a href="~/ministatement">Mini Statement</a></li>
-        <li><a  href="~/DepositFund/Deposit">Deposit Cash</a></li>
+        <li><a href="~/DepositFund/Deposit">Deposit Cash</a></li>
     </ul>
 
 

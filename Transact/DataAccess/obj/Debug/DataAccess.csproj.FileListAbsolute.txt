@@ -1,0 +1,12 @@
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\bin\Debug\DataAccess.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\bin\Debug\DataAccess.pdb
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\bin\Debug\CommonHelper.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\bin\Debug\DataTransferObjects.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\bin\Debug\Oracle.DataAccess.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\bin\Debug\CommonHelper.pdb
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\bin\Debug\DataTransferObjects.pdb
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\obj\Debug\DataAccess.dll
+E:\Backup\C_DriveBKP\Desktop\desktop files\Development\MVC\Transact\Transact\DataAccess\obj\Debug\DataAccess.pdb

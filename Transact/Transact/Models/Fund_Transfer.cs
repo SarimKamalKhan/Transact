@@ -10,7 +10,7 @@ namespace Transact.Models
     {
 
          [Key]
-        public string TRANSACTION_ID { get; set; }
+        public int TRANSACTION_ID { get; set; }
 
 
         [Required(ErrorMessage = "FROM_ACCOUNT is Required")]
